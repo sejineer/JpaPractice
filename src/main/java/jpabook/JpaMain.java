@@ -1,6 +1,7 @@
 package jpabook;
 
 import jpabook.domain.Member;
+import jpabook.domain.Order;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,6 +19,7 @@ public class JpaMain {
         tx.begin();
 
         try {
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
